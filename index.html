@@ -2,21 +2,31 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <title>charliekmcmahon</title>
   </head>
   <body>
 
-<h1>Welcome to charliekmcmahon.com.au</h1>
+<h1 id="title"></h1>
 
-<!-- Main CSS for website (embedded) -->
-<style media="screen">
+<script>
 
-body{
+var i = 0;
+var txt = 'Welcome to charliekmcmahon.com.au';
+var speed = 50;
 
-  font-family: "Arial";
-
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("title").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }
 
-</style>
+typeWriter()
+
+</script>
+
+<!-- Main CSS for website (embedded) -->
   </body>
 </html>
