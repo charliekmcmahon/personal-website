@@ -5,6 +5,13 @@ body {
   font-family: 'Share Tech Mono', monospace;
   background-color: #f0f0f0;
 
+}
 
 
+.Header h1, #Cover--0 .Cover-title {
+    font-family: "Courier", "Lucida Console", monospace;
+    font-weight: normal;
+    letter-spacing: -.075em;
+    text-align: left;
+    text-shadow: 0 0 0.125em rgba(255,255,255,1), 0 0 0.25em rgba(255,255,255,1), 0 0 0.375em rgba(255,255,255,1), 0 0 0.5em #E97C00, 0 0 0.875em #E97C00, 0 0 1em #E97C00, 0 0 1.25em #E97C00;
 }
